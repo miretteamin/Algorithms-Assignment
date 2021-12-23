@@ -21,6 +21,9 @@ int main()
     cout <<s.searchN(7)<< endl;
     cout <<s.searchN(15)<< endl;
     cout <<s.searchN(5)<< endl;
-
+    s.deleteN(7);
+    s.deleteN(12);
+    cout << "After delete" <<endl;
+    s.printSkip();
     return 0;
 }

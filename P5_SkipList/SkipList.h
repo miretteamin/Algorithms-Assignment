@@ -15,6 +15,7 @@ public:
     int height;
     SkipList();
     void insertN(int value);
+    void deleteN(int value);
     bool flipCoin();
     int getLayer();
     void printLayer(int layerNum);

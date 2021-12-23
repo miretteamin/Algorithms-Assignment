@@ -28,12 +28,12 @@ bool SkipList::flipCoin()
     int flip = (rand()%10);
     if(flip%2==0)
     {
-        cout << "H"<<endl;
+        cout << "Head"<<endl;
         return true;
     }
     else
     {
-          cout << "F"<<endl;
+          cout << "Tail"<<endl;
         return false;
 
     }
@@ -90,9 +90,13 @@ void SkipList::insertN(int value)
         newNode->value = value;
         newNode->below = nullptr;
         newNode->aboveLevel = nullptr;
+        cout << "   " <<value << " is inserted." << endl;
+        cout << value << ": ";
 
         while(flipCoin() && counter != 4)
         {
+                cout << value << ": ";
+
             counter++;
             if(counter>height)
             {
@@ -146,7 +150,7 @@ void SkipList::insertN(int value)
     else{
             cout << "Already exists";
     }
-
+    cout << endl;
 }
 
 int SkipList::getLayer()
@@ -203,6 +207,40 @@ void SkipList::printSkip()
         }
 }
 
+
+void SkipList::deleteN(int value)
+{
+    if((searchN(value)!=-1))
+    {
+        while((searchN(value)!=-1))
+        {
+            node* found = header;
+            while(1)
+            {
+                if((found->next->value)== value)
+                {
+                    //found = ;
+                    break;
+                }
+                else if((found->next->value)> value)
+                    found = found->below;
+                else
+                {
+                     found = found->next;
+                }
+            }
+            node* temp = found->next;
+            node* tempNext = temp->next;
+            found->next = tempNext;
+        }
+    }
+
+    else
+    {
+        cout << "This value does not exist " <<endl;
+    }
+
+};
 
 void SkipList::printSkipA()
 {

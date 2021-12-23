@@ -232,6 +232,8 @@ void SkipList::deleteN(int value)
             node* temp = found->next;
             node* tempNext = temp->next;
             found->next = tempNext;
+            delete (temp);
+
         }
     }
 

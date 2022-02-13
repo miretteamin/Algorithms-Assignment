@@ -7,21 +7,22 @@ int main()
 	ios::sync_with_stdio(false), cin.tie(), cout.tie();
 	unordered_map<int, int>mp;
 	string buffer;
-	int nb, res = 0;
+	int nb, res = 100000;
 	getline(cin, buffer);
 	istringstream in(buffer);
-	while (in >> nb) {
-		mp[nb]++;
-	}
+	int idx = 0;
 	bool flag = false;
-	for (auto it = mp.begin(); it != mp.end(); it++)
-	{
-		if (it->second >= 2) {
+	while (in >> nb) {
+		auto it = mp.find(nb);
+		if (it == mp.end())
+			mp[nb] = idx;
+		else {
+			res = min(mp[nb], res);
 			flag = true;
-			break;
 		}
-		res++;
+		idx++;
 	}
+
 	if (flag)
 		cout << "The minimum index of the repeating element is " << res << endl;
 	else

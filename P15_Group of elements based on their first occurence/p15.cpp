@@ -17,7 +17,7 @@ int main()
 	for (auto it = mp.begin(); it != mp.end(); it++)
 	{
 		for (int j = 0; j < it->second; j++)
-			cout << it->first << ' ';
+			cout << it->first <<' ';
 
 	}
 	cout << "}" << endl;

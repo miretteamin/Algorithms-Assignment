@@ -11,87 +11,78 @@ Sample 1-Output:<br/>
 Sample 2-Input:<br/>
 2 1 3 1 2<br/>
 Sample 2-Output:<br/>
-42<br/>2<br/>
+4
 ## Problem#2
 Given an array A of integers and an integer k, you're to get the kth minimum integer in
 this array.
 Since the array size may be large, the array is not given as input. You've to generate it
-yourself. To generate the array elements, consider this function that generates a random
-number:
+yourself. To generate the array elements, consider this function that generates a random number:
 You'll be given the initial values of m_w and m_z, and the array size N. Then you've to
-call this function N times to generate the N array elements.
-
+call this function N times to generate the N array elements.<br/>
 Input Format:
 Every test case consists of 4 integers: N, K, m_w, m_z.
-You can consider that N <= 10,000,000, 1 <= K <= N, 1 <= m_w,m_z <= 100.
+You can consider that N <= 10,000,000, 1 <= K <= N, 1 <= m_w,m_z <= 100.<br/>
 Output Format:
-For every test case print one integer: the kth minimum number
-
-Sample 1-Input:
-3 1 1 2
-Sample 1-Output:
-643275087
-Sample 2-Input:
-3 2 1 2
-Sample 2-Output:
-692891904
-
-
+For every test case print one integer: the kth minimum number<br/>
+Sample 1-Input:2<br/>
+3 1 1 2<br/>
+Sample 1-Output:2<br/>
+643275087<br/>
+Sample 2-Input:2<br/>
+3 2 1 2<br/>
+Sample 2-Output:<br/>
+692891904<br/>
 ## Problem#3
 Given an array A of integers, you're to calculate the number of inversions in this array.
-Number of inversions is the number of pairs (i,j) of array indices with i<j and A[i] > A[j] -
-(more info. https://www.youtube.com/watch?v=EJwR1FG8vGk)
+Number of inversions is the number of pairs (i,j) of array indices with i<j and A[i] > A[j] - (more info. https://www.youtube.com/watch?v=EJwR1FG8vGk)2<br/>
 Input Format:
 Every test case consists of two lines. The first line in N, the number of array
 elements. The second line contains the array elements themselves.
 You can guarantee that T <= 100, N <= 100,000 , and all array elements are
-between 1 and 1,000,000,000
-
+between 1 and 1,000,000,000<br/>
 Output Format:
-For every test case, you're to print one integer: the number of inversions.
+For every test case, you're to print one integer: the number of inversions.<br/>
 
-Sample Input:
-4
-1 2 3 4
-2
-2 1
-4
-3 2 1 4
-Sample Output:
-0
-1
-3
-
-
+Sample Input:<br/>
+4<br/>
+1 2 3 4<br/>
+2<br/>
+2 1<br/>
+4<br/>
+3 2 1 4<br/>
+Sample Output:<br/>
+0<br/>
+1<br/>
+3<br/>
 ## Problem#4
 You have a multiset containing several integers. Initially, it contains a1 elements equal to
 1, a2 elements equal to 2, ..., an elements equal to 𝑛.
-You may apply two types of operations:
+You may apply two types of operations:<br/>
 ● choose two integers 𝑙 and 𝑟 (𝑙≤𝑟), then remove one occurrence of 𝑙, one occurrence of 𝑙+1, ...,
 one occurrence of 𝑟 from the multiset. This operation can be applied only if each number from 𝑙
-to 𝑟 occurs at least once in the multiset
+to 𝑟 occurs at least once in the multiset<br/>
 ● choose two integers 𝑖 and 𝑥 (𝑥≥1), then remove 𝑥 occurrences of 𝑖 from the multiset. This
 operation can be applied only if the multiset contains at least 𝑥 occurrences of 𝑖
-What is the minimum number of operations required to delete all elements from the multiset?
+What is the minimum number of operations required to delete all elements from the multiset?<br/>
 
-Sample 1-Input:
-1 4 1 1
-Sample 1-Output:
-2
-Sample 2-Input:
-1 0 1 0 1
-Sample 2-Output:
-3
---> Explanation of sample 1
-    1 4 1 1
-    a1 = number of occurrence for number 1 is 1
-    a2 = number of occurrence for number 2 is 4
-    a3 = number of occurrence for number 3 is 1
-    a4 = number of occurrence for number 4 is 1
-    This multiset equivalent to {1, 2,2,2,2, 3, 4}
-    solution :
-    - Use first operation from (l = 1 to r = 4) result: {2,2,2}
-    - Use second operation (i = 2 and x= 3) result: {}    
+Sample 1-Input:<br/>
+1 4 1 1<br/>
+Sample 1-Output:<br/>
+2<br/>
+Sample 2-Input:<br/>
+1 0 1 0 1<br/>
+Sample 2-Output:<br/>
+3<br/>
+--> Explanation of sample 1<br/>
+    1 4 1 1<br/>
+    a1 = number of occurrence for number 1 is 1<br/>
+    a2 = number of occurrence for number 2 is 4<br/>
+    a3 = number of occurrence for number 3 is 1<br/>
+    a4 = number of occurrence for number 4 is 1<br/>
+    This multiset equivalent to {1, 2,2,2,2, 3, 4}<br/>
+    solution :<br/>
+    - Use first operation from (l = 1 to r = 4) result: {2,2,2}<br/>
+    - Use second operation (i = 2 and x= 3) result: {}    <br/>
 
 
 ## Problem#5

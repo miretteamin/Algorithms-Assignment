@@ -5,15 +5,13 @@ As you probably already know, the algorithm can be really slow. To study this mo
 the number of times the swap operation is performed when sorting an array.<br />
 
 Sample 1-Input:<br/>
-1 1 1 2 2
-Sample 1-Output:
-0
-Sample 2-Input:
-2 1 3 1 2
-Sample 2-Output:
-4
-
-
+1 1 1 2 2<br />
+Sample 1-Output:<br/>
+0<br/>
+Sample 2-Input:<br/>
+2 1 3 1 2<br/>
+Sample 2-Output:<br/>
+42<br/>2<br/>
 ## Problem#2
 Given an array A of integers and an integer k, you're to get the kth minimum integer in
 this array.

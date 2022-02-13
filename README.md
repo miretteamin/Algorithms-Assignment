@@ -123,6 +123,21 @@ first 2 rows in map to row 0 and the last row to 1 (The appropriate indices in t
 1<br/>
 Usually this would entail doing a normal search through the records in both tables causing thecomplexity to be O(M * N). 
 Can you propose a better way to know the joins? How would you store the tables accordingly and how would you do the search?
+
+
+## Problem#7
+In Computer Graphics transformations are applied on many vertices on the screen. Translation, Rotations
+and Scaling.
+Assume you’re operating on a vertex with 3 values (X, Y, 1). X, Y being the X Y coordinates and 1 is always
+constant
+A Translation is done on X as X = X + X’ and on Y as Y = Y + Y’
+X’ and Y’ being the values to translate by
+A scaling is done on X as X = aX and on Y as Y = bY
+a and b being the scaling factors
+Propose the best way to store these linear equations and an optimal way to calculate them on each
+vertex. (This would need some googling to figure out or to refer to your graphics course)
+Note: This doesn’t require complex code. You are free to write your thoughts and suggestions and the
+answer with any code of your liking to showcase your idea.
 ## Problem#8
 A toy factory found a defect in one of it’s equipment resulting in some toys being defective. The problem
 however is that they don’t know which series of toys has that defect. Knowing that all toys are produced

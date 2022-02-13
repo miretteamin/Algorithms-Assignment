@@ -2,9 +2,9 @@
 ## Problem#1
 Insertion Sort is a classical sorting technique.
 As you probably already know, the algorithm can be really slow. To study this more, you want to find out
-the number of times the swap operation is performed when sorting an array.
+the number of times the swap operation is performed when sorting an array.<br />
 
-Sample 1-Input:
+Sample 1-Input:<br/>
 1 1 1 2 2
 Sample 1-Output:
 0

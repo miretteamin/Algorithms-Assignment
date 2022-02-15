@@ -1,5 +1,0 @@
-﻿  Using triplet "x64-windows" from "D:\vcpkg\installed\x64-windows\"
-  main.cpp
-D:\miret\Documents\My Applications\C_CPP\Algorithms\Assignment\Algorithms-Assignment\Ackermann Function\main.cpp(52): warning C4715: 'modifiedAck': not all control paths return a value
-D:\miret\Documents\My Applications\C_CPP\Algorithms\Assignment\Algorithms-Assignment\Ackermann Function\main.cpp(19): warning C4715: 'ack': not all control paths return a value
-  Ackermann Function.vcxproj -> D:\miret\Documents\My Applications\C_CPP\Algorithms\Assignment\Algorithms-Assignment\x64\Debug\Ackermann Function.exe

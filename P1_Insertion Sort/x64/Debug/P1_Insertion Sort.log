@@ -1,4 +1,0 @@
-﻿  Using triplet "x64-windows" from "D:\vcpkg\installed\x64-windows\"
-  p1.cpp
-D:\miret\Documents\My Applications\C_CPP\Algorithms\Assignment\Algorithms-Assignment\P1_Insertion Sort\p1.cpp(8,20): warning C4101: 'temp': unreferenced local variable
-  P1_Insertion Sort.vcxproj -> D:\miret\Documents\My Applications\C_CPP\Algorithms\Assignment\Algorithms-Assignment\x64\Debug\P1_Insertion Sort.exe
